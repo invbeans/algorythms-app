@@ -1,0 +1,11 @@
+.container-canvas {
+    width: 50em;
+    height: 30em;
+    background-color: #e6e5e5;
+    border: 1px solid #a8a7a7;
+    border-radius: 15px;
+}
+
+.h1-canvas {
+    margin: 0;
+}

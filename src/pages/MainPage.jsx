@@ -1,31 +1,40 @@
-import { useDispatch, useSelector } from "react-redux"
-import { changeValue, increment } from "../slices/example";
-import { useEffect } from "react";
+//import { useDispatch, useSelector } from "react-redux"
+import BackgroundComponent from "../components/main-page/BackgroundComponent"
+import AlgorythmTypeButton from "../components/common/AlgorythmTypeButton"
+// import { EXAMPLE, changeValue, increment } from "../slices/example";
+// import { useEffect } from "react";
+import './MainPage.css';
 
 export default function MainPage() {
-    const val = useSelector((state) => state.example.value);
-    const ready = useSelector((state) => state.example.doneSorting);
-    const dispatch = useDispatch();
+    //REMOVE LATER (examples)
 
-    useEffect(() => {
-        let interval = setInterval(() => {
-            if(!ready) {
-                dispatch(increment())
-                console.log(ready)
-            }
-        }, 1000);
-        return () => clearInterval(interval);
-    }, [ready, dispatch])
+    // const val = useSelector((state) => state.example.value);
+    // const ready = useSelector((state) => state.example.doneSorting);
+    // const dispatch = useDispatch();
 
-    function handleClick() {
-        dispatch(changeValue(5));
-    }
+    // useEffect(() => {
+    //     let interval = setInterval(() => {
+    //         if(!ready) {
+    //             dispatch(increment(EXAMPLE))
+    //             console.log(ready)
+    //         }
+    //     }, 1000);
+    //     return () => clearInterval(interval);
+    // }, [ready, dispatch])
+
+    // function handleClick() {
+    //     dispatch(changeValue(5));
+    // }
+    /* <span>{val}</span>
+    <button onClick={handleClick}>Поменять валью в стейте</button> */
 
     return (
-        <div>
-            <h1>Main page</h1>
-            <span>{val}</span>
-            <button onClick={handleClick}>Поменять валью в стейте</button>
-        </div>
+        <BackgroundComponent>
+            <div className="grid-main">
+                <h1 className="h1-main">Визуализация алгоритмов сортировки и поиска</h1>
+                <AlgorythmTypeButton nameOfType="Сортировка" pageLink="sort"></AlgorythmTypeButton>
+                <AlgorythmTypeButton nameOfType="Поиск" pageLink="search"></AlgorythmTypeButton>
+            </div>
+        </BackgroundComponent>
     )
 }

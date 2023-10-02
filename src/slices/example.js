@@ -6,13 +6,20 @@ const initialState = {
     doneSorting: false
 }
 
+//to choose algorythm
+export const EXAMPLE = 'EXAMPLE';
+
 export const exampleSlice = createSlice({
     name: 'example',
     initialState,
     reducers: {
-        increment: (state) => {
-            state.value = exampleInc(state.value);
-            state.doneSorting = checkSorting(state.value);
+        increment: (state, action) => {
+            switch (action.payload) {
+                case EXAMPLE:
+                    state.value = exampleInc(state.value);
+                    state.doneSorting = checkSorting(state.value);
+                    break;
+            }
         },
         changeValue: (state, action) => {
             state.value = action.payload;

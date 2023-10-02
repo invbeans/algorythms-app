@@ -1,0 +1,18 @@
+.button-main {
+    border: none;
+    background-color: rgb(165, 165, 113);
+    border-radius: 10px;
+    font-size: 2em;
+    width: 10em;
+    height: 2.3em;
+    color:black;
+}
+
+.button-main:hover {
+    background-color: rgb(134, 118, 91);
+}
+
+.button-main:active {
+    background-color: rgb(216, 216, 149);
+}
+
