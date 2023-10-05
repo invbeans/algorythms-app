@@ -1,9 +1,9 @@
 import './CanvasComponent.css';
 
-export default function CanvasComponent() {
+export default function CanvasComponent({children}) {
     return (
         <div className="container-canvas">
-            <h1 className="h1-canvas">Canvas</h1>
+            {children}
         </div>
     )
 }

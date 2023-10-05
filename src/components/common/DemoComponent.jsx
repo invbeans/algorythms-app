@@ -7,7 +7,7 @@ export default function DemoComponent({ children, characteristics }) {
             <div className='children-demo'>
                 {children}
             </div>
-            <p>Time: {characteristics.time} | Memory: {characteristics.memory}</p>
+            <p>Time: {characteristics.time} | Space: {characteristics.space}</p>
         </div>
     )
 }

@@ -1,0 +1,17 @@
+.container-choose {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.element-choose {
+    width: 10em;
+    min-width: fit-content;
+    height: fit-content;
+    padding: 0 15px;
+    text-align: center;
+    background-color: rgb(190, 190, 118);
+}
