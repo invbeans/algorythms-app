@@ -5,41 +5,45 @@ import ChooseComponent from '../components/sort-page/ChooseComponent'
 import ElementComponent from '../components/sort-page/ElementComponent'
 import info from '../algorithms-info/sorting/algorithmsInfo';
 import './SortPage.css'
-import { useEffect } from 'react';
-import {useSelector, useDispatch} from 'react-redux';
-import { BUBBLE_SORT, initArray, sortStep } from '../slices/sortSlice';
-
-const characteristics = {
-    time: 'O(n)',
-    space: 'O(n)'
-}
+import { useEffect, useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { BUBBLE_SORT, QUICK_SORT, initArray, sortStep } from '../slices/sortSlice';
 
 export default function SortPage() {
     let sortArray = useSelector((state) => state.sort.array);
     let isDone = useSelector((state) => state.sort.doneSorting);
     const dispatch = useDispatch();
+    let [sortAlgorithm, setSortAlgorithm] = useState(BUBBLE_SORT);
+    let [sortInfo, setSortInfo] = useState(info.find(elem => elem.key === sortAlgorithm));
 
     //not sure if it will work correctly when ill change algorithm
     useEffect(() => {
         dispatch(initArray());
-        console.log(sortArray);
-    }, [])
+    }, [sortAlgorithm, dispatch])
 
     useEffect(() => {
         let interval = setInterval(() => {
-            if(!isDone) {
-                dispatch(sortStep(BUBBLE_SORT))
+            if (!isDone) {
+                dispatch(sortStep(sortAlgorithm))
             }
-        }, 500)
+        }, 300)
         return () => clearInterval(interval);
-    }, [isDone, dispatch])
+    }, [sortAlgorithm, isDone, dispatch])
+
+    function handleChooseClick(sortKey) {
+        setSortInfo(info.find(elem => elem.key === sortKey));
+        setSortAlgorithm(sortKey);
+    }
 
     return (
         <div className="container-sort">
-            {/* <h1 className='h1-sort'>Sort page</h1> */}
-            <ChooseComponent algorithmsInfo={info}></ChooseComponent>
-            <DemoComponent characteristics={characteristics}>
-                <DescriptionComponent description={'there should be description of algorythm'}></DescriptionComponent>
+            <div className="container-choose">
+                {info.map(algorithmInfo => {
+                    return <ChooseComponent algorithmInfo={algorithmInfo} onChooseClick={handleChooseClick} key={algorithmInfo.key}></ChooseComponent>
+                })}
+            </div>
+            <DemoComponent info={sortInfo}>
+                <DescriptionComponent description={sortInfo.description}></DescriptionComponent>
                 <CanvasComponent>
                     {sortArray.map(num => {
                         return <ElementComponent number={num} key={num}></ElementComponent>

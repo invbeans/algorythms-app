@@ -7,3 +7,12 @@
 .h1-sort {
     margin: 0;
 }
+
+.container-choose {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+}

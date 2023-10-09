@@ -1,15 +1,9 @@
 import './ChooseComponent.css'
 
-export default function ChooseComponent({ algorithmsInfo }) {   
+export default function ChooseComponent({ algorithmInfo, onChooseClick }) {
     return (
-        <div className="container-choose">
-            {algorithmsInfo.map((elem) => {
-                return (
-                    <div className='element-choose'>
-                        <p>{elem.name}</p>
-                    </div>
-                )
-            })}
+        <div className='element-choose' key={algorithmInfo.key} onClick={() => onChooseClick(algorithmInfo.key)}>
+            <p>{algorithmInfo.name}</p>
         </div>
     )
 }

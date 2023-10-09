@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initSortArray } from "../algorythms/sorting/initSortArray";
 import { bubbleSortStep, isBubbleSortDone } from "../algorythms/sorting/bubbleSort";
+import { isQuickSortDone, quickSortStep } from "../algorythms/sorting/quickSort";
 
 const initialState = {
     array: [],
@@ -8,6 +9,7 @@ const initialState = {
 }
 
 export const BUBBLE_SORT = 'BUBBLE_SORT';
+export const QUICK_SORT = 'QUICK_SORT';
 
 export const sortSlice = createSlice ({
     name: 'sort',
@@ -15,13 +17,17 @@ export const sortSlice = createSlice ({
     reducers: {
         initArray: (state, action) => {
             state.array = initSortArray();
+            state.doneSorting = false;
         },
         sortStep: (state, action) => {
             switch (action.payload) {
                 case BUBBLE_SORT:
                     state.array = bubbleSortStep(state.array);
-                    //console.log(state.array);
                     state.doneSorting = isBubbleSortDone(state.array);
+                    break;
+                case QUICK_SORT:
+                    state.array = quickSortStep(state.array);
+                    state.doneSorting = isQuickSortDone();
                     break;
             }
         }
