@@ -16,7 +16,6 @@ export default function SortPage() {
     let [sortAlgorithm, setSortAlgorithm] = useState(BUBBLE_SORT);
     let [sortInfo, setSortInfo] = useState(info.find(elem => elem.key === sortAlgorithm));
 
-    //not sure if it will work correctly when ill change algorithm
     useEffect(() => {
         dispatch(initArray());
     }, [sortAlgorithm, dispatch])

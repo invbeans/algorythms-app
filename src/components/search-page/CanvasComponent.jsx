@@ -1,8 +1,16 @@
 import './CanvasComponent.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
-export default function CanvasComponent() {
-    const [number, setNumber] = useState('');
+export default function CanvasComponent({ children, onResetClick, onStartClick }) {
+    const [number, setNumber] = useState(0);
+    let isFound = useSelector((state) => state.search.isFound);
+    let [resultString, setResultString] = useState('Число не найдено');
+
+    useEffect(() => {
+        setResultString(isFound ? 'Число найдено' : 'Число не найдено');
+        console.log(isFound);
+    }, [isFound])
 
     const handleInput = (event) => {
         setNumber(event.target.value);
@@ -10,8 +18,13 @@ export default function CanvasComponent() {
 
     return (
         <div className="container-canvas">
-            <h1 className="h1-canvas">Canvas</h1>
-            <input type='number' value={number} onChange={handleInput} placeholder='Введите число для поиска'></input>
+            <button onClick={onResetClick}>Обновить массив</button>
+            <div className="search-array-container">
+                {children}
+            </div>
+            <input type='number' value={number} onChange={handleInput} placeholder='Введите число для поиска' />
+            <button onClick={() => onStartClick(number)}>Начать</button>
+            <p>{resultString}</p>
         </div>
     )
 }

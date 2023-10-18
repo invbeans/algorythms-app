@@ -1,0 +1,18 @@
+.element-search {
+    height: 20em;
+    width: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 0.8em;
+    margin-bottom: 15em;
+    /* transition: all 0.2s linear; */
+}
+
+.active {
+    background-color: green;
+}
+
+.normal {
+    background-color: rgb(153, 153, 120);
+}

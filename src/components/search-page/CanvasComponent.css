@@ -9,3 +9,10 @@
 .h1-canvas {
     margin: 0;
 }
+
+.search-array-container {
+    height: 25em;
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+}
