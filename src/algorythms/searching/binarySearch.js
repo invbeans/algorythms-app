@@ -35,7 +35,6 @@ export function isBinarySearchDone(array, numberToSearch) {
 }
 
 export function isNumberFoundByBinarySearch(array, numberToSearch) {
-    console.log(array[middleIndex]);
     if(array[middleIndex] === +numberToSearch) {
         return true;
     } else return false;

@@ -6,19 +6,18 @@ import ChooseComponent from '../components/search-page/ChooseComponent';
 import ElementComponent from '../components/search-page/ElementComponent';
 import './SearchPage.css';
 import { useEffect, useRef, useState } from 'react';
-import { BINARY_SEARCH, JUMP_SEARCH, initArray, setNumberToSearch, searchStep } from '../slices/searchSlice';
+import { LINEAR_SEARCH, BINARY_SEARCH, JUMP_SEARCH, initArray, setNumberToSearch, searchStep } from '../slices/searchSlice';
 import info from '../algorithms-info/searching/algorithmsInfo';
 
 export default function SearchPage() {
     let searchArray = useSelector((state) => state.search.array);
     let numberToSearch = useSelector((state) => state.search.numberToSearch);
     let isDone = useSelector((state) => state.search.doneSearching);
-    let [inputNumber, setInputNumber] = useState(0);
     let [startSearching, setStartSearching] = useState(true);
     let [resetArray, setResetArray] = useState(true);
     const dispatch = useDispatch();
     const isSearchEffect = useRef(false);
-    let [searchAlgorithm, setSearchAlgorithm] = useState(BINARY_SEARCH);
+    let [searchAlgorithm, setSearchAlgorithm] = useState(LINEAR_SEARCH);
     let [searchInfo, setSearchInfo] = useState(info.find(elem => elem.key === searchAlgorithm));
 
     useEffect(() => {

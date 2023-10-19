@@ -7,7 +7,7 @@ import info from '../algorithms-info/sorting/algorithmsInfo';
 import './SortPage.css'
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { BUBBLE_SORT, QUICK_SORT, initArray, sortStep } from '../slices/sortSlice';
+import { BUBBLE_SORT, SELECTION_SORT, QUICK_SORT, initArray, sortStep } from '../slices/sortSlice';
 
 export default function SortPage() {
     let sortArray = useSelector((state) => state.sort.array);
@@ -23,7 +23,7 @@ export default function SortPage() {
     useEffect(() => {
         let interval = setInterval(() => {
             if (!isDone) {
-                dispatch(sortStep(sortAlgorithm))
+                dispatch(sortStep(sortAlgorithm));
             }
         }, 300)
         return () => clearInterval(interval);

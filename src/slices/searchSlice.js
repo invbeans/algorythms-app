@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { initSearchArray } from '../algorythms/searching/initSearchArray';
 import { binarySearchStep, isBinarySearchDone, isNumberFoundByBinarySearch } from "../algorythms/searching/binarySearch";
 import { isJumpSearchDone, isNumberFoundByJumpSearch, jumpSearchStep } from "../algorythms/searching/jumpSearch";
+import { isLinearSearchDone, isNumberFoundByLinearSearch, linearSearchStep } from "../algorythms/searching/linearSearch";
 
 const initialState = {
     array: [],
@@ -12,6 +13,7 @@ const initialState = {
     isFound: false
 }
 
+export const LINEAR_SEARCH = 'LINEAR_SEARCH';
 export const BINARY_SEARCH = 'BINARY_SEARCH';
 export const JUMP_SEARCH = 'JUMP_SEARCH';
 
@@ -34,18 +36,22 @@ export const searchSlice = createSlice({
             state.isFound = false;
         },
         searchStep: (state, action) => {
-            console.log(state.doneSearching);
             switch (action.payload) {
+                case LINEAR_SEARCH:
+                    state.activeIndexes.push(linearSearchStep(state.array, state.numberToSearch));
+                    state.isFound = isNumberFoundByLinearSearch(state.array, state.numberToSearch);
+                    state.doneSearching = isLinearSearchDone(state.array, state.numberToSearch);
+                    break;
+
                 case BINARY_SEARCH:
                     //step - возвращать будет активный элемент
-                    //console.log(JSON.stringify(state.activeIndexes));
                     state.activeIndexes.push(binarySearchStep(state.array, state.numberToSearch));
                     //isfound
                     state.isFound = isNumberFoundByBinarySearch(state.array, state.numberToSearch);
                     //donesearch
                     state.doneSearching = isBinarySearchDone(state.array, state.numberToSearch);
                     break;
-    
+
                 case JUMP_SEARCH:
                     state.activeIndexes.push(jumpSearchStep(state.array, state.numberToSearch));
                     //console.log(JSON.stringify(state.activeIndexes));
