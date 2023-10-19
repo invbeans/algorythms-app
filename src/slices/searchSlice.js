@@ -38,16 +38,17 @@ export const searchSlice = createSlice({
             switch (action.payload) {
                 case BINARY_SEARCH:
                     //step - возвращать будет активный элемент
-                    console.log(JSON.stringify(state.activeIndexes));
+                    //console.log(JSON.stringify(state.activeIndexes));
                     state.activeIndexes.push(binarySearchStep(state.array, state.numberToSearch));
                     //isfound
                     state.isFound = isNumberFoundByBinarySearch(state.array, state.numberToSearch);
                     //donesearch
                     state.doneSearching = isBinarySearchDone(state.array, state.numberToSearch);
                     break;
-                    
+    
                 case JUMP_SEARCH:
                     state.activeIndexes.push(jumpSearchStep(state.array, state.numberToSearch));
+                    //console.log(JSON.stringify(state.activeIndexes));
                     state.isFound = isNumberFoundByJumpSearch(state.array, state.numberToSearch);
                     state.doneSearching = isJumpSearchDone(state.array, state.numberToSearch);
                     break;

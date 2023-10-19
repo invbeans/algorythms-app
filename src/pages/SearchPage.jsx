@@ -17,16 +17,17 @@ export default function SearchPage() {
     let [startSearching, setStartSearching] = useState(true);
     let [resetArray, setResetArray] = useState(true);
     const dispatch = useDispatch();
-    const isMounted = useRef(false);
+    const isSearchEffect = useRef(false);
     let [searchAlgorithm, setSearchAlgorithm] = useState(BINARY_SEARCH);
     let [searchInfo, setSearchInfo] = useState(info.find(elem => elem.key === searchAlgorithm));
 
     useEffect(() => {
         dispatch(initArray());
+        isSearchEffect.current = false;
     }, [searchAlgorithm, resetArray, dispatch])
 
     useEffect(() => {
-        if (isMounted.current) {
+        if (isSearchEffect.current) {
             let interval = setInterval(() => {
                 if (!isDone) {
                     dispatch(searchStep(searchAlgorithm));
@@ -34,7 +35,7 @@ export default function SearchPage() {
             }, 300)
             return () => clearInterval(interval);
         } else {
-            isMounted.current = true;
+            isSearchEffect.current = true;
         }
     }, [numberToSearch, searchAlgorithm, isDone, dispatch])
 
