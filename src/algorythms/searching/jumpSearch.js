@@ -57,7 +57,6 @@ export function isJumpSearchDone(array, numberToSearch) {
     }
     else if (array[previousStep] === +numberToSearch) {
         clearProperties();
-        console.log('я где');
         return true;
     }
     else {
@@ -67,7 +66,6 @@ export function isJumpSearchDone(array, numberToSearch) {
 
 export function isNumberFoundByJumpSearch(array, numberToSearch) {
     if (array[previousStep] === +numberToSearch) {
-        console.log('я тут');
         return true;
     } else return false;
 }

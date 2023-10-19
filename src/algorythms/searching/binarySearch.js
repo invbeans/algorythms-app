@@ -23,7 +23,7 @@ export function binarySearchStep(array, numberToSearch) {
 }
 
 export function isBinarySearchDone(array, numberToSearch) {
-    if (firstIndex <= lastIndex && array[middleIndex] != numberToSearch) {
+    if (firstIndex <= lastIndex && array[middleIndex] !== +numberToSearch) {
         return false;
     } else {
         firstIndex = 0;
@@ -36,7 +36,7 @@ export function isBinarySearchDone(array, numberToSearch) {
 
 export function isNumberFoundByBinarySearch(array, numberToSearch) {
     console.log(array[middleIndex]);
-    if(array[middleIndex] == numberToSearch) {
+    if(array[middleIndex] === +numberToSearch) {
         return true;
     } else return false;
 }
