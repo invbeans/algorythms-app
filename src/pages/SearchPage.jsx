@@ -59,7 +59,7 @@ export default function SearchPage() {
                     return <ChooseComponent algorithmInfo={algorithmInfo} onChooseClick={handleChooseClick} key={algorithmInfo.key}></ChooseComponent>
                 })}
             </div>
-            <DemoComponent info={searchInfo}>
+            <DemoComponent header={"Алгоритмы поиска"} info={searchInfo}>
                 <DescriptionComponent description={searchInfo.description}></DescriptionComponent>
                 <CanvasComponent onResetClick={handleResetClick} onStartClick={handleStartClick}>
                     {searchArray.map((num, index) => {

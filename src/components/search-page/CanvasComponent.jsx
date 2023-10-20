@@ -17,14 +17,19 @@ export default function CanvasComponent({ children, onResetClick, onStartClick }
     }
 
     return (
-        <div className="container-canvas">
-            <button onClick={onResetClick}>Обновить массив</button>
+        <div className="container-canvas-search">
+            {/* <div className="inputs-and-info-search">
+                
+            </div> */}
             <div className="search-array-container">
                 {children}
             </div>
-            <input type='number' value={number} onChange={handleInput} placeholder='Введите число для поиска' />
-            <button onClick={() => onStartClick(number)}>Начать</button>
             <p>{resultString}</p>
+            <div className="inputs-and-info-search">
+            <button className='buttons-search' onClick={onResetClick}>Обновить массив</button>
+                <input className='input-search' type='number' value={number} onChange={handleInput} placeholder='Введите число для поиска' />
+                <button className='buttons-search' onClick={() => onStartClick(number)}>Начать</button>
+            </div>
         </div>
     )
 }

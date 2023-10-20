@@ -1,4 +1,4 @@
-.container-canvas {
+.container-canvas-sort {
     width: 50em;
     height: 30em;
     background-color: #e6e5e5;
@@ -6,5 +6,6 @@
     border-radius: 15px;
     display: flex;
     gap: 2px;
-    align-items: flex-end;
+    padding-top: 6em;
+    justify-content: center;
 }

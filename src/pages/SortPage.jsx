@@ -41,7 +41,7 @@ export default function SortPage() {
                     return <ChooseComponent algorithmInfo={algorithmInfo} onChooseClick={handleChooseClick} key={algorithmInfo.key}></ChooseComponent>
                 })}
             </div>
-            <DemoComponent info={sortInfo}>
+            <DemoComponent header={"Алгоритмы сортировки"} info={sortInfo}>
                 <DescriptionComponent description={sortInfo.description}></DescriptionComponent>
                 <CanvasComponent>
                     {sortArray.map(num => {
