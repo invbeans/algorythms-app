@@ -5,6 +5,7 @@
     place-items: center;
     height: fit-content;
     width: fit-content;
+    z-index: 10;
 }
 
 .h1-main {

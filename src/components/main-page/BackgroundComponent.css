@@ -6,3 +6,14 @@
     justify-content: center;
     background-color: var(--main-color);
 }
+
+.sort-background {
+    position: absolute;
+    height: 30vh;
+    margin: auto;
+    display: flex;
+    gap: 1em;
+    transform: scale(2.5);
+    filter: blur(1px);
+    opacity: 0.15;
+}
