@@ -1,11 +1,12 @@
 .element-sort {
-    height: 20em;
-    width: 2em;
+    height: 16em;
+    width: 2.7em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 0.8em;
-    background-color: hsl(var(--hue), 80%, 50%);
+    font-weight: bold;
+    align-items: center;
+    background-color: hsl(353, var(--saturation), 68.8%);
     margin-bottom: 15em;
-    transition: all 0.2s linear;
+    padding-bottom: 0.5em;
 }

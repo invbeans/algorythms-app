@@ -1,7 +1,7 @@
 .container-search {
     width: 100%;
     height: 100%;
-    background-color: beige;
+    background-color: var(--main-color);
 }
 
 .h1-search {

@@ -1,18 +1,17 @@
 .button-main {
     border: none;
-    background-color: rgb(165, 165, 113);
+    background-color: var(--contrast-color);
     border-radius: 10px;
     font-size: 2em;
     width: 10em;
     height: 2.3em;
-    color:black;
+    color: var(--font-color-dark);
 }
 
 .button-main:hover {
-    background-color: rgb(134, 118, 91);
+    background-color: var(--contrast-color-hover);
 }
 
 .button-main:active {
-    background-color: rgb(216, 216, 149);
+    background-color: var(--contrast-color-active);
 }
-

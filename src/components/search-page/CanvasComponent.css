@@ -1,8 +1,7 @@
 .container-canvas-search {
     width: 50em;
     height: 30em;
-    background-color: #e6e5e5;
-    border: 1px solid #a8a7a7;
+    background-color: var(--font-color-light);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -19,18 +18,29 @@
 
 .buttons-search {
     width: 15em;
+    font-size: 16px;
     height: 3.4em;
     min-width: fit-content;
     border: none;
     border-radius: 3px;
-    background-color: rgb(165, 165, 113);
+    background-color: var(--contrast-color);
+}
+
+.buttons-search:hover {
+    background-color: var(--contrast-color-hover);
+}
+
+.buttons-search:active {
+    background-color: var(--contrast-color-active);
 }
 
 .input-search {
-    width: 12em;
-    height: 3.4em;
+    width: 10em;
+    height: 3.4em;    
+    font-size: 16px;
     min-width: fit-content;
     border: none;
+    outline: none;
     border-radius: 3px;
     padding-left: 1em;
 }

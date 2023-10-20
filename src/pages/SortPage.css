@@ -1,11 +1,7 @@
 .container-sort {
     width: 100%;
     height: 100%;
-    background-color: beige;
-}
-
-.h1-sort {
-    margin: 0;
+    background-color: var(--main-color);
 }
 
 .container-choose {

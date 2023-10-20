@@ -7,7 +7,7 @@ export default function DemoComponent({ children, header, info }) {
             <div className='children-demo'>
                 {children}
             </div>
-            <p className='difficulty-line'>Time: {info.time} | Space: {info.space}</p>
+            <p className='difficulty-line'>Временная сложность: {info.time} | Пространственная сложность: {info.space}</p>
         </div>
     )
 }

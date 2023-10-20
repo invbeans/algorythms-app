@@ -4,6 +4,16 @@
     height: fit-content;
     padding: 0 15px;
     text-align: center;
-    background-color: rgb(190, 190, 118);
+    background-color: var(--contrast-color);
+    color: var(--font-color-dark);
+    font-weight: bold;
     border-radius: 5px;
+}
+
+.element-choose:hover {
+    background-color: var(--contrast-color-hover);
+}
+
+.element-choose:active {
+    background-color: var(--contrast-color-active);
 }

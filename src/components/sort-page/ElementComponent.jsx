@@ -1,12 +1,12 @@
 import './ElementComponent.css';
 
 export default function ElementComponent({number}) {
-    const hue = (number / 50) * 360;
+    const saturation = (number / 50) * 100;
 
     return (
         <div 
             className="element-sort"
-            style={{'--hue': hue}}
+            style={{'--saturation': saturation+'%'}}
         >
             {number}
         </div>

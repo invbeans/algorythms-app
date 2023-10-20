@@ -1,18 +1,18 @@
 .element-search {
-    height: 20em;
-    width: 2em;
+    height: 16em;
+    width: 2.7em;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 0.8em;
-    /* margin-bottom: 15em; */
-    /* transition: all 0.2s linear; */
+    align-items: center;
+    padding-bottom: 0.5em;
 }
 
 .active {
-    background-color: green;
+    background-color: var(--search-elements-active-color);
 }
 
 .normal {
-    background-color: rgb(153, 153, 120);
+    background-color: var(--search-elements-normal-color);
 }
