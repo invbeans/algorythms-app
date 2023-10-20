@@ -18,9 +18,6 @@ export default function CanvasComponent({ children, onResetClick, onStartClick }
 
     return (
         <div className="container-canvas-search">
-            {/* <div className="inputs-and-info-search">
-                
-            </div> */}
             <div className="search-array-container">
                 {children}
             </div>

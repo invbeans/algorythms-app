@@ -10,8 +10,10 @@
 
 .button-main:hover {
     background-color: var(--contrast-color-hover);
+    cursor: pointer;
 }
 
 .button-main:active {
     background-color: var(--contrast-color-active);
+    cursor: pointer;
 }

@@ -12,8 +12,10 @@
 
 .element-choose:hover {
     background-color: var(--contrast-color-hover);
+    cursor: pointer;
 }
 
 .element-choose:active {
     background-color: var(--contrast-color-active);
+    cursor: pointer;
 }

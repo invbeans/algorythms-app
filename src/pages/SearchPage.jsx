@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import DemoComponent from '../components/common/DemoComponent'
 import DescriptionComponent from '../components/common/DescriptionComponent'
 import CanvasComponent from '../components/search-page/CanvasComponent'
-import ChooseComponent from '../components/search-page/ChooseComponent';
+import ChooseComponent from '../components/common/ChooseComponent'
 import ElementComponent from '../components/search-page/ElementComponent';
 import './SearchPage.css';
 import { useEffect, useRef, useState } from 'react';

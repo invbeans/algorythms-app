@@ -28,10 +28,12 @@
 
 .buttons-search:hover {
     background-color: var(--contrast-color-hover);
+    cursor: pointer;
 }
 
 .buttons-search:active {
     background-color: var(--contrast-color-active);
+    cursor: pointer;
 }
 
 .input-search {

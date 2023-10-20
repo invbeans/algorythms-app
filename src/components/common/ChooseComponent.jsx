@@ -1,4 +1,4 @@
-//import './ChooseComponent.css'
+import './ChooseComponent.css';
 
 export default function ChooseComponent({ algorithmInfo, onChooseClick }) {
     return (

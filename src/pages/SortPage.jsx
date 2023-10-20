@@ -1,7 +1,7 @@
 import DemoComponent from '../components/common/DemoComponent'
 import DescriptionComponent from '../components/common/DescriptionComponent'
 import CanvasComponent from '../components/sort-page/CanvasComponent'
-import ChooseComponent from '../components/sort-page/ChooseComponent'
+import ChooseComponent from '../components/common/ChooseComponent'
 import ElementComponent from '../components/sort-page/ElementComponent'
 import info from '../algorithms-info/sorting/algorithmsInfo';
 import './SortPage.css'
