@@ -6,4 +6,5 @@
     color: var(--font-color-light);
     border-radius: 15px;
     padding: 1em 2em;
+    box-shadow: -2px 2px 18px 9px rgba(7, 30, 45, 0.6);
 }

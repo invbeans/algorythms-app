@@ -7,4 +7,5 @@
     gap: 2px;
     padding-top: 6em;
     justify-content: center;
+    box-shadow: -2px 2px 18px 9px rgba(7, 30, 45, 0.6);
 }

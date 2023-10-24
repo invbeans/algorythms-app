@@ -23,7 +23,7 @@ export default function CanvasComponent({ children, onResetClick, onStartClick }
             </div>
             <p>{resultString}</p>
             <div className="inputs-and-info-search">
-            <button className='buttons-search' onClick={onResetClick}>Обновить массив</button>
+                <button className='buttons-search' onClick={onResetClick}>Обновить массив</button>
                 <input className='input-search' type='number' value={number} onChange={handleInput} placeholder='Введите число для поиска' />
                 <button className='buttons-search' onClick={() => onStartClick(number)}>Начать</button>
             </div>
