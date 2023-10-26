@@ -1,5 +1,5 @@
 import BackgroundComponent from "../components/main-page/BackgroundComponent"
-import AlgorythmTypeButton from "../components/common/AlgorythmTypeButton"
+import AlgorythmTypeButton from "../components/main-page/AlgorythmTypeButton"
 import './MainPage.css';
 
 export default function MainPage() {
