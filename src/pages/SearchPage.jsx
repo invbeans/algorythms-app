@@ -36,7 +36,7 @@ export default function SearchPage() {
         } else {
             isSearchEffect.current = true;
         }
-    }, [numberToSearch, searchArray, isDone, dispatch])
+    }, [numberToSearch, isDone, dispatch])
 
     function handleChooseClick(searchKey) {
         setSearchInfo(info.find(elem => elem.key === searchKey));
