@@ -20,15 +20,15 @@
 @media (max-width: 924px) and (orientation: landscape) {
     .element-search { 
         width: 5vw;
-        height: 20em;
-        font-size: 0.6em;
+        height: 15em;
+        font-size: 0.8em;
     }
 }
 
 @media (max-width: 417px) and (orientation: portrait) {
     .element-search { 
         width: 7vw;
-        height: 30em;
-        font-size: 0.4em;
+        height: 18em;
+        font-size: 0.7em;
     }
 }

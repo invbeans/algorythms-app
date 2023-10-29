@@ -34,8 +34,8 @@ body,
 
 @media (max-width: 417px) and (orientation: portrait) {
   #root {
-    min-height: 100%;
-    height: max(100%, 100dvh);
+    min-height: fit-content;
+    height: 100%;
   }
 }
 
