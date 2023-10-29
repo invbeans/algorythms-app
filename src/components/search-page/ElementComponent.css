@@ -16,3 +16,19 @@
 .normal {
     background-color: var(--search-elements-normal-color);
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .element-search { 
+        width: 5vw;
+        height: 20em;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .element-search { 
+        width: 7vw;
+        height: 30em;
+        font-size: 0.4em;
+    }
+}

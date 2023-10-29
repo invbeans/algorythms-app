@@ -55,3 +55,74 @@
     gap: 1em;
     align-items: center;
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-canvas-search {
+        width: 80vw;
+        height: 20em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1.7em;
+    }
+
+    .container-canvas-search p {
+        font-size: 12px;
+    }
+
+    .input-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.9em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 0.6em;
+        justify-content: center;
+    }
+
+    .buttons-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-canvas-search {
+        width: 20em;
+        height: 19em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1.5em;
+    }
+
+    .container-canvas-search p {
+        font-size: 12px;
+    }
+
+    .input-search {
+        max-width: 8em;
+        min-width: 8em;
+        height: 2.7em;    
+        font-size: 0.7em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 0.6em;
+        justify-content: center;
+    }
+
+    .buttons-search {
+        width: 5em;
+        height: 2.7em;    
+        font-size: 0.7em;
+    }
+}

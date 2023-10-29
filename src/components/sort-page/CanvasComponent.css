@@ -9,3 +9,21 @@
     justify-content: center;
     box-shadow: -2px 2px 18px 9px rgba(7, 30, 45, 0.6);
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-canvas-sort {
+        width: 80vw;
+        height: 20em;
+        padding-top: 0;
+        align-items: center;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-canvas-sort {
+        width: 20em;
+        height: 19em;
+        padding-top: 0;
+        align-items: center;
+    }
+}

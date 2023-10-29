@@ -19,3 +19,23 @@
     background-color: var(--contrast-color-active);
     cursor: pointer;
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .element-choose {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .element-choose {
+        font-size: 0.8em;
+        padding: 0 5px;
+        min-width: none;
+        width: 8em;
+    }
+
+    .element-choose p {
+        width: 4em;
+        white-space: pre-line;
+    }
+}

@@ -18,3 +18,24 @@
     filter: blur(1px);
     opacity: 0.15;
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .sort-background {
+        width: fit-content;
+        gap: 0.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 30vh;
+        align-items: center;
+        transform: none;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .sort-background {
+        gap: 0.12em;
+        margin-top: 0;
+        height: 20vh;
+        transform: none;
+    }
+}

@@ -7,6 +7,21 @@
     font-weight: bold;
     align-items: center;
     background-color: hsl(353, var(--saturation), 68.8%);
-    margin-bottom: 15em;
     padding-bottom: 0.5em;
+}
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .element-sort { 
+        width: 5vw;
+        height: 20em;
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .element-sort { 
+        width: 7vw;
+        height: 30em;
+        font-size: 0.4em;
+    }
 }

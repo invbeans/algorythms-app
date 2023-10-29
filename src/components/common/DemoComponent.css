@@ -1,5 +1,5 @@
 .h1-demo {
-    margin: 0.5em 0;    
+    margin: 0.5em 0;
     color: var(--font-color-light);
     padding-left: 1em;
 }
@@ -19,7 +19,59 @@
 
 .difficulty-line {
     padding-left: 2em;
+    padding-top: 1em;
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
     color: var(--contrast-color);
+}
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-demo {
+        align-items: center;
+    }
+
+    .h1-demo {
+        font-size: 1.3em;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .children-demo {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-top: 0.7em;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .difficulty-line {
+        font-size: 1em;
+        padding-top: 0.8em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-demo {
+        align-items: center;
+    }
+
+    .h1-demo {
+        font-size: 1.3em;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .children-demo {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-top: 0.7em;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    .difficulty-line {
+        font-size: 1em;
+        padding-top: 0.6em;
+    }
 }

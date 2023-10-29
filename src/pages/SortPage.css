@@ -12,3 +12,19 @@
     padding-top: 1em;
     padding-left: 2.5em;
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-choose {
+        gap: 0.5em;
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-choose {
+        gap: 0.4em;
+        padding-left: 0;
+        justify-content: center;
+    }
+}

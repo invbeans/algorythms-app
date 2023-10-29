@@ -17,3 +17,15 @@
     background-color: var(--contrast-color-active);
     cursor: pointer;
 }
+
+@media (max-width: 924px) and (orientation: landscape) {
+    .button-main {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .button-main {
+        font-size: 1.3em;
+    }
+}
