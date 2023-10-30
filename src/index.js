@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -14,13 +14,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<MainPage />}></Route>
         <Route path='/sort' element={<SortPage />}></Route>
         <Route path='/search' element={<SearchPage />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </Provider >
 );
 
