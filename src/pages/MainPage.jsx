@@ -10,6 +10,7 @@ export default function MainPage() {
                 <AlgorythmTypeButton nameOfType="Сортировка" pageLink="sort"></AlgorythmTypeButton>
                 <AlgorythmTypeButton nameOfType="Поиск" pageLink="search"></AlgorythmTypeButton>
             </div>
+            {/* <div className="page-footer"></div> */}
         </BackgroundComponent>
     )
 }

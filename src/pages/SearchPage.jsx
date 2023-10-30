@@ -67,6 +67,8 @@ export default function SearchPage() {
                     })}
                 </CanvasComponent>
             </DemoComponent>
+            {/* this works, but i don't really like this decision */}
+            <div className="page-footer"></div>
         </div>
 
     )
