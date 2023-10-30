@@ -26,6 +26,23 @@
     color: var(--contrast-color);
 }
 
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .h1-demo {
+        font-size: 1.6em;
+    }
+
+    .children-demo {
+        padding-top: 1em;
+        gap: 1.5em;
+    }
+
+    .difficulty-line {
+        font-size: 1.2em;
+        padding-top: 1em;
+    }
+}
+
 /* tablets & small laptops */
 @media (924px < width <= 1180px) and (orientation: landscape) {
     .h1-demo {

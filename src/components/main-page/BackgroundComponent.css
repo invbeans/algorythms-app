@@ -19,6 +19,13 @@
     opacity: 0.15;
 }
 
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .sort-background {
+        transform: scale(2);
+    }
+}
+
 /* tablets & small laptops */
 @media (924px < width <= 1180px) and (orientation: landscape) {
     .sort-background {

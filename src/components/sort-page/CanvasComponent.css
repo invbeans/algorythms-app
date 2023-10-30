@@ -10,6 +10,15 @@
     box-shadow: -2px 2px 18px 9px rgba(7, 30, 45, 0.6);
 }
 
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .container-canvas-sort {
+        width: 44vw;
+        min-height: fit-content;
+        height: 30em;
+    }
+}
+
 /* tablets & small laptops */
 @media (924px < width <= 1180px) and (orientation: landscape) {
     .container-canvas-sort {

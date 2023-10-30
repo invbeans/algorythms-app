@@ -56,6 +56,37 @@
     align-items: center;
 }
 
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .container-canvas-search {
+        width: 44vw;
+        min-height: fit-content;
+        height: 30em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 4em;
+    }
+
+    .input-search {
+        width: 8em;
+        height: 3.5em;    
+    }
+
+    .buttons-search {
+        width: 8em;
+        height: 3.5em;    
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
 /* tablets & small laptops */
 @media (924px < width <= 1180px) and (orientation: landscape) {
     .container-canvas-search {
