@@ -18,3 +18,55 @@
     filter: blur(1px);
     opacity: 0.15;
 }
+
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .sort-background {
+        transform: scale(2);
+    }
+}
+
+/* tablets & small laptops */
+@media (924px < width <= 1180px) and (orientation: landscape) {
+    .sort-background {
+        width: fit-content;
+        gap: 0.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 50vh;
+        align-items: center;
+        transform: scale(2);
+    }
+}
+
+@media (417px < width <= 820px) and (orientation: portrait) {
+    .sort-background {
+        gap: 0.5em;
+        margin-top: 0;
+        height: 40vh;
+        align-items: center;
+        transform: scale(1.4);
+    }
+}
+
+/* phones */
+@media (max-width: 924px) and (orientation: landscape) {
+    .sort-background {
+        width: fit-content;
+        gap: 0.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 30vh;
+        align-items: center;
+        transform: none;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .sort-background {
+        gap: 0.12em;
+        margin-top: 0;
+        height: 20vh;
+        transform: none;
+    }
+}

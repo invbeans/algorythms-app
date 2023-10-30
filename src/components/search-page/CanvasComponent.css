@@ -55,3 +55,172 @@
     gap: 1em;
     align-items: center;
 }
+
+/* wider laptops */
+@media (1180px < width <= 1300px) and (orientation: landscape) {
+    .container-canvas-search {
+        width: 44vw;
+        min-height: fit-content;
+        height: 30em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 4em;
+    }
+
+    .input-search {
+        width: 8em;
+        height: 3.5em;    
+    }
+
+    .buttons-search {
+        width: 8em;
+        height: 3.5em;    
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+/* tablets & small laptops */
+@media (924px < width <= 1180px) and (orientation: landscape) {
+    .container-canvas-search {
+        width: 44vw;
+        min-height: fit-content;
+        height: 30em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 4em;
+    }
+
+    .input-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.8em;
+    }
+
+    .buttons-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.8em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+@media (417px < width <= 820px) and (orientation: portrait) {
+    .container-canvas-search {
+        width: 80vw;
+        min-height: fit-content;
+        height: 25em;
+        padding-top: 1em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1em;
+    }
+
+    .input-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 1em;
+    }
+
+    .buttons-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 1em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 1em;
+        justify-content: center;
+    }
+}
+
+/* phones */
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-canvas-search {
+        width: 80vw;
+        height: 20em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1.7em;
+    }
+
+    .container-canvas-search p {
+        font-size: 12px;
+    }
+
+    .input-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.9em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 0.6em;
+        justify-content: center;
+    }
+
+    .buttons-search {
+        width: 7em;
+        height: 3em;    
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-canvas-search {
+        width: 20em;
+        height: 19em;
+    }
+
+    .search-array-container {
+        width: 100%;
+        height: fit-content;
+        margin-top: 1.5em;
+    }
+
+    .container-canvas-search p {
+        font-size: 12px;
+    }
+
+    .input-search {
+        max-width: 8em;
+        min-width: 8em;
+        height: 2.7em;    
+        font-size: 0.7em;
+    }
+
+    .inputs-and-info-search {
+        width: 100%;
+        gap: 0.6em;
+        justify-content: center;
+    }
+
+    .buttons-search {
+        width: 5em;
+        height: 2.7em;    
+        font-size: 0.7em;
+    }
+}

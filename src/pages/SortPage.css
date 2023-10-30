@@ -12,3 +12,29 @@
     padding-top: 1em;
     padding-left: 2.5em;
 }
+
+/* tablets & small laptops */
+@media (417px < width <= 820px) and (orientation: portrait) {
+    .container-choose {
+        gap: 1em;
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+/* phones */
+@media (max-width: 924px) and (orientation: landscape) {
+    .container-choose {
+        gap: 0.5em;
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .container-choose {
+        gap: 0.4em;
+        padding-left: 0;
+        justify-content: center;
+    }
+}

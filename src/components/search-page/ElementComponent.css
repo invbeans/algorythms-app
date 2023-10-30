@@ -16,3 +16,33 @@
 .normal {
     background-color: var(--search-elements-normal-color);
 }
+
+/* tablets & small laptops */
+@media (924px < width <= 1180px) and (orientation: landscape) {
+    .element-search { 
+        width: 2.4em;
+    }
+}
+
+@media (417px < width <= 820px) and (orientation: portrait) {
+    .element-search {
+        height: 14em;
+    }
+}
+
+/* phones */
+@media (max-width: 924px) and (orientation: landscape) {
+    .element-search { 
+        width: 5vw;
+        height: 15em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .element-search { 
+        width: 7vw;
+        height: 18em;
+        font-size: 0.7em;
+    }
+}

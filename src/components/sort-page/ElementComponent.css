@@ -7,6 +7,35 @@
     font-weight: bold;
     align-items: center;
     background-color: hsl(353, var(--saturation), 68.8%);
-    margin-bottom: 15em;
     padding-bottom: 0.5em;
+}
+
+/* tablets & small laptops */
+@media (924px < width <= 1180px) and (orientation: landscape) {
+    .element-sort { 
+        width: 2.4em;
+    }
+}
+
+@media (417px < width <= 820px) and (orientation: portrait) {
+    .element-sort {
+        height: 14em;
+    }
+}
+
+/* phones */
+@media (max-width: 924px) and (orientation: landscape) {
+    .element-sort { 
+        width: 5vw;
+        height: 18em;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 417px) and (orientation: portrait) {
+    .element-sort { 
+        width: 7vw;
+        height: 18em;
+        font-size: 0.7em;
+    }
 }
