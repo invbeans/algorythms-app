@@ -11,13 +11,13 @@
 }
 
 /* tablets & small laptops */
-@media (924px < width <= 1030px) and (orientation: landscape) {
+@media (924px < width <= 1180px) and (orientation: landscape) {
     .element-sort { 
         width: 2.4em;
     }
 }
 
-@media (417px < width <= 780px) and (orientation: portrait) {
+@media (417px < width <= 820px) and (orientation: portrait) {
     .element-sort {
         height: 14em;
     }

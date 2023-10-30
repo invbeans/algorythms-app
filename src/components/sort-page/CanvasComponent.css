@@ -11,7 +11,7 @@
 }
 
 /* tablets & small laptops */
-@media (924px < width <= 1030px) and (orientation: landscape) {
+@media (924px < width <= 1180px) and (orientation: landscape) {
     .container-canvas-sort {
         width: 44vw;
         min-height: fit-content;
@@ -19,7 +19,7 @@
     }
 }
 
-@media (417px < width <= 780px) and (orientation: portrait) {
+@media (417px < width <= 820px) and (orientation: portrait) {
     .container-canvas-sort {
         width: 80vw;
         min-height: fit-content;

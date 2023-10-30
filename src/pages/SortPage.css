@@ -14,7 +14,7 @@
 }
 
 /* tablets & small laptops */
-@media (417px < width <= 780px) and (orientation: portrait) {
+@media (417px < width <= 820px) and (orientation: portrait) {
     .container-choose {
         gap: 1em;
         padding-left: 0;
