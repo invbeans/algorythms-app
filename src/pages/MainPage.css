@@ -25,6 +25,31 @@
     z-index: -1;
 }
 
+/* tablets & small laptops */
+@media (924px < width <= 1030px) and (orientation: landscape) {
+    .grid-main {
+        grid-template-columns: 20em 20em;
+        grid-template-rows: 10em 10em;
+    }
+
+    .h1-main {
+        font-size: 1.6em;
+    }
+}
+
+@media (417px < width <= 780px) and (orientation: portrait) {
+    .grid-main {
+        grid-template-columns: 20em 20em;
+        grid-template-rows: 10em 10em;
+    }
+
+    .h1-main {
+        text-align: center;
+        font-size: 1.6em;
+    }
+}
+
+/* phones */
 @media (max-width: 924px) and (orientation: landscape) {
     .grid-main {
         grid-template-columns: 15em 15em;

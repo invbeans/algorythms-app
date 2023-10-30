@@ -9,6 +9,26 @@
     box-shadow: -2px 2px 18px 9px rgba(7, 30, 45, 0.6);
 }
 
+/* tablets & small laptops */
+@media (924px < width <= 1030px) and (orientation: landscape) {
+    .description-container {
+        width: 44vw;
+        min-height: fit-content;
+        height: 30em;
+        padding: 1em 2em;
+    }
+}
+
+@media (417px < width <= 780px) and (orientation: portrait) {
+    .description-container {
+        width: 80vw;
+        min-height: fit-content;
+        height: 20em;
+        padding: 1em 2em;
+    }
+}
+
+/* phones */
 @media (max-width: 924px) and (orientation: landscape) {
     .description-container {
         width: 80vw;
